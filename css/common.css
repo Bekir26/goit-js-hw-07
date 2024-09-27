@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+
+#categories .item{
+  width: 100%;
+  max-width: 360px;
+  background-color: #F6F6FE;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+#categories li{
+  list-style-type: none;
+}
+
+.item h2{
+  margin-bottom: 16px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 100px auto;
+  max-width: 1128px;
+  gap: 24px;
+}
+
+.item ul li {
+  padding: 8px 16px;
+  height: 40px;
+  border: 1px solid #979798;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+
+
+.gallery li {
+  flex: 1 1 calc(33.333% - 24px);
+  max-width: calc(33.333% - 24px);
+  box-sizing: border-box;
+}
+
+.gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 48px;
+}
+
+
+#name-input, .login-form input{
+  line-height: 24px;
+  font-size: 16px;
+  padding: 8px 16px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 360px;
+  width: 100%;
+  outline: none;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  border: 1px solid #979798;
+  border-radius: 6px;
+  outline: none;
+}
+.login-form{
+  padding: 24px;
+  background-color: #FFFFFF;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+.login-form label{
+  display: flex;
+  margin-bottom: 8px;
+  flex-direction: column;
+
+}
+.login-form button{
+  margin-top: -8px;
+}
+
+.login-form input{
+  margin-top: 8px;
+}
+.login-form button:hover, .widget button:hover, #controls button:hover{
+  background-color: #6C8CFF;
+  cursor: pointer;
+}
+.login-form button, .widget button, #controls button{
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  letter-spacing: 4%;
+  font-weight: 500;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  background-color: #4E75FF;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+#controls button{
+  width: 120px;
+}
+#controls button[data-destroy]{
+  background-color: #FF4E4E;
+}
+
+#controls button[data-destroy]:hover{
+  background-color: #FF7070;
+}
+#name-input + h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: bold;
+  letter-spacing: 4%;
+}
+.widget p{
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 4%;
+}
+.widget .color:hover{
+  cursor: pointer;
+}
+.widget {
+  background-color: #FFFFFF;
+  width: 345px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+
+#controls {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+#controls, #boxes{
+  margin: 20px 0;
+  padding: 32px 28px 32px 32px;
+  background-color: #F6F6FE;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 486px;
+}
+
+#controls input[type="number"]::-webkit-inner-spin-button,
+#controls input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+#controls input[type="number"] {
+  -moz-appearance: textfield;
+  height: 40px;
+  width: 150px;
+  padding: 8px;
+  text-align: center;
+  outline: none;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 4%;
+}
+#boxes{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+  box-sizing:border-box;
+}
+#boxes div{
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .gallery li {
+      flex: 1 1 calc(50% - 10px);
+      max-width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery li {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
+}
